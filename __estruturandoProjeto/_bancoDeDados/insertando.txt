@@ -1,0 +1,24 @@
+INSERT INTO `typeUsers` (`id`, `description`) VALUES (0, 'ADM'),(1, 'usuário'), (2, 'comercial'), (3, 'administrativo'), ('4', 'Estagiário');
+
+INSERT INTO `typeimovel` (`id`, `description`) VALUES ('0', 'indisponivel'), ('1', 'disponivel'), ('2', 'vendido'), ('3', 'alugado');
+
+INSERT INTO `imoveis` (`id`, `endereco`, `numero`, `complemento`, `bairro`, `typeImovel_id`) VALUES
+('0', 'Rua Nossa Senhora das Graças', '130', 'casa 01', 'Glória', '0'),
+('1', 'Av. Independecia', '336', 'ap. 105', 'Independência', '0'),
+('2', 'Av. Independência', '994', 'conj. 105, bloco C', 'Independência', '1'),
+('3', 'Rua Nove Irmãos', '64', 'lote A', 'Lami', '1'),
+('4', 'Rua Barão de Ubá', '665', 'ap 205', 'Bela Vista', '1'),
+('5', 'Rua Barão de Ubá', '951', NULL, 'Bela Vista', '1'),
+('6', 'Rua Alfredo da Rocha', '756', NULL, 'Bela Vista', '2'),
+('7', 'Av. Farrapos', '1597', NULL, 'Farrapos', '3'),
+('8', ' R. Euríco Lara', '161', '406', 'Medianeira', '3');
+
+
+INSERT INTO `users` (`id`, `name`, `email`, `password`, `token`, `typeUsers_id`) VALUES
+(NULL, 'Israel da Cunha Pereira', 'pereiraisraelcunha@gmail.com', '123', '202cb962ac59075b964b07152d234b70', '0'),
+(NULL, 'Desiree Lamberti', 'desilamberti@gmail.com', 'ojggmzyz', '890dee0117c8d6137c120661129ad636', '1'),
+(NULL, 'Lisandra Maccari', 'limaccari@hotmail.com', 'qx03tqsa', '6b8dad556aaf7f0fb04e9855dfa82e6a', '1'),
+(NULL, 'Michelle Barros', 'michbarros@uol.com.br', 'zqai1sjk', '98a82a2b810915d1e5c45059cbcb2ad2', '2'),
+(NULL, 'Alessandro Barcellos', 'alebarcellos@gmail.com', 'm5fss418', '173bc1fcae7473f8fba26d4cff6e196e', '2'),
+(NULL, 'Carlos da Silva e Silva', 'silvacarlos47@imobiliaria.com.br', 'e7eqw3fd', 'af54808c66777e13d8e1115896a5c151', '3'),
+(NULL, 'Marlise Almeida', 'marlialmeida@imoveis.com.br', '123', '202cb962ac59075b964b07152d234b70', '3');
